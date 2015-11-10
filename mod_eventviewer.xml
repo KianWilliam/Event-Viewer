@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.x" client="site" method="upgrade">
+<name>EventViewer</name>
+<author>Kian William Nowrouzian</author>
+<creationDate>August 1, 2015</creationDate>
+<copyright>Copyright© 2015 Kian William Nowrouzian</copyright>
+<license>GNU General Public License version 3 ; see COPYING.txt</license>
+<authorEmail>mezmer121@gmail.com</authorEmail>
+<authorUrl>http://www.myextenstions.lordir.ir</authorUrl>
+<version>1.0.0</version>
+<description><![CDATA[<div style="background:#e71e9e; width:300px;font-weight:bold; font-style:normal; color:#fcfafb;">Welcome to My EventViewer. Enjoy! </div>]]></description>
+<files>
+	<filename>mod_eventviewer.xml</filename>
+	<filename module="mod_eventviewer">mod_eventviewer.php</filename>
+	<filename>helper.php</filename>
+	<filename>index.html</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.html</filename>
+	<filename>css/mystyles.css</filename>
+	<filename>css/index.html</filename>
+	<filename>js/jquery.js</filename>
+	<filename>js/event.js</filename>
+	<filename>js/index.html</filename>
+	<filename>c1.png</filename>
+	<filename>eve.png</filename>
+	<folder>elements</folder>
+</files>
+
+<languages folder="language">
+<language tag="en-GB">en-GB.mod_eventviewer.ini</language>
+<language tag="en-GB">en-GB.mod_eventviewer.sys.ini</language>
+</languages>
+
+<config>
+<fields name="params">
+	<fieldset name="Basic">
+	
+		<field name="col" type="color" label="MOD_COLOR_LABEL" description="MOD_COLOR_DESC" />
+		<field name="loadJquery" type="list" lable="MOD_LOADJQUERY_LABEL" description="MOD_LOADJQUERY_DESC">
+			<option value="0">JYes</option>
+			<option value="1">JNo</option>
+		</field>
+		<field name="fontcolor" type="color" label="MOD_EVENTVIEWER_FONTCOLOR_LABEL" description="MOD_EVENTVIEWER_FONTCOLOR_DESC" default="#ffffff" />
+		<field name="fontfamily" type="text" label="MOD_EVENTVIEWER_FONTFAMILY_LABEL" description="MOD_EVENTVIEWER_FONTFAMILY_DESC"  filter="raw" />
+		<field name="fontsize" type="text" label="MOD_EVENTVIEWER_FONTSIZE_LABEL" description="MOD_EVENTVIEWER_FONTSIZE_DESC"  filter="integer" />
+		<field name="fontstyle" type="list" label="MOD_EVENTVIEWER_FONTSTYLE_LABEL" description="MOD_EVENTVIEWER_FONTSTYLE_DESC">
+			<option value="0">normal-normal</option>
+			<option value="1">bold-normal</option>
+			<option value="2">normal-italic</option>
+			<option value="3">bold-italic</option>
+		</field>
+	</fieldset>
+	<fieldset name="events" addfieldpath="/modules/mod_eventviewer/elements">
+		<field name="events" type="myeventsmanager" label="MOD_EVENTVIEWER_MODAL_LABEL" description="MOD_EVENTVIEWER_MODAL_DESC" filter="raw" default="[{}]" />
+	</fieldset>
+</fields>
+</config>
+
+
+</extension>
