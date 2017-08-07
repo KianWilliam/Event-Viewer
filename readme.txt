@@ -5,8 +5,7 @@ The license is GNU/GPLv3
 It is written for joomla 3.x,fill all formfields in 
 module to make it work.(don't add px for font-size)
 you may download the module at:
-http://www.myextenstions.lord121.ir/event.html
+http://www.extensions.lord121.ir/mymodules/eventviewer-download.html
 also in case of any question email me at:
 mezmer121@gmail.com
-or go to http://www.myextenstions.lord121.ir/support.html and send me a message.
 long live science.
